@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantom Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="js-style.css">
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- top icon -->
+  <link rel="icon" href="/images/top-icon.png" type="/images/top-icon.png">
+</head>
+<body>
+  <div class="allOf1">
+    <main>
+      <nav>
+        <div class="QN1">
+          <a href="#"><h1>Quantom Notes</h1></a>
+        </div>
+        <div class="menu">
+          <i class="fa-solid fa-bars" style="color: #000000;"></i>
+          <!-- <ul>
+            <li>Sort</li>
+            <li>Delete All Notes</li>
+          </ul>        -->
+        </div>
+      </nav>
+      <section class="section1">
+        <div class="add-btn-div">
+            <div class="plus-div">
+              <i class="fa-solid fa-plus" style="color:rgb(255, 255, 255);"></i>          
+            </div>
+        </div>
+
+        <div class="all-notes">
+
+        </div>
+      </section>
+      <footer>
+        <i class="fa-solid fa-xmark" style="color: #000000;"></i>  
+      </footer>
+    </main>
+  </div>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <div class="allOf2">
+    <main>
+      <nav>
+        <div class="back">
+          <i class="fa-solid fa-angle-left thBackArrow"  style="color: #000000;"></i>
+        </div>
+        <div class="QN2">
+          <a href="#"><h1>Quantom Notes</h1></a>
+        </div>
+        <div class="check">
+          <i class="fa-solid fa-check"  style="color: #000000;"></i>
+        </div>
+      </nav>
+      <section class="section2">
+          <div class="title">
+            <input type="text" placeholder="Title" class="note-title" autofocus>
+            <p>
+              <span class="date">11/20/2023 </span> 
+              <span class="time">9:20</span>
+            </p>
+          </div>
+          <div class="note">
+            <textarea class="note-txt" placeholder="Enter your text here..."></textarea>
+          </div>
+      </section>
+      <footer>
+      </footer>
+    </main>
+  </div>
+
+  <div class="overlay">
+    <div class="modal">
+      <div>
+        <h1>Are You Sure You Want To Delete?</h1>
+      </div>
+      <div>
+        <button class="yesbtn">Yes</button>
+        <button class="nobtn">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- you need to fix -->
+<!-- 
+  the date and time 
+  local storage 
+  updating {
+    when updated let the previous one be deleted
+  }
+ -->

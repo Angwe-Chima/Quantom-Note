@@ -1,0 +1,414 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1{
+  text-transform: capitalize;
+}
+
+i:hover{
+  cursor: pointer;
+}
+
+/* WebKit Scrollbar */
+::-webkit-scrollbar {
+  width: 9px; 
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background:black; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d5b500;
+  border-radius: 30px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: wheat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.allOf1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background: #000;
+}
+
+main{
+  background-color: #373737;
+  width: 85%;
+  height: 95%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  flex-direction: column;
+
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  background-color: #FFD700;
+  padding: 0% .2%;
+  height: 10%;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+nav a h1{
+  color: black;
+  text-shadow: 0px 0px 2px ;
+}
+
+.back{
+  width: 30%;
+  display: flex;
+  justify-content: start;
+}
+
+.back i{
+  color:black;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back i:hover{
+ border: 1px solid red;
+ border-radius: 5px;
+}
+
+
+.QN1{
+  width: 55%;
+  display: flex;
+  justify-content: end;
+}
+
+.menu{
+  width:44% ;
+  display: flex;
+  justify-content: end;
+  padding-right:20px;
+}
+
+.menu i{
+  font-size: 22px;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px;
+}
+
+/* .menu ul{
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content;center
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
+} */
+.section1{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 1%;
+  padding: 1%;
+}
+
+.add-btn-div{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus-div{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: black;
+  font-size: 60px;
+  display: flex;
+  padding: 2.5%;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease;
+}
+
+.plus-div:hover{
+  background-color: rgba(0, 0, 0, 0.801);
+  cursor: pointer;
+}
+
+.plus-div:active{
+  background-color: limegreen;
+}
+
+.all-notes{
+  width: 100%;
+  height: 80%;
+  border: 3px solid #ffd9004f;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  justify-content: start;
+  padding: 1%;
+  gap: 5%;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 16%;
+  height: 150px;
+  background-color: #000;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 8px black;
+  min-width: 180px;
+  min-height: 140px;
+}
+
+.card-sec1{
+ width: 100%;
+ height: 20%;
+ background-color: rgb(247, 226, 108);
+ border-radius: 10px 10px 0px 0px;
+ display: flex;
+ padding: 0% 5%;
+ justify-content: space-between;
+ align-items: center;
+ color: black;
+ font-weight: 600;
+}
+
+.card-sec2{
+  width: 100%;
+  height:80% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  gap: 5%;
+}
+
+.card-sec2 p, .card-sec2 h1{
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.card-sec2 p{
+  font-size: 12px;
+}
+
+footer{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: #FFD700;
+  padding: 0% .2%;
+}
+
+footer i{
+  font-size: 30px;
+}
+
+
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+
+
+.allOf2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background: #000;
+}
+
+.back{
+  width: 30%;
+  display: flex;
+  justify-content: start;
+}
+
+.back i{
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.QN2{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.check{
+  width:30% ;
+  display: flex;
+  justify-content: end;
+  padding-right:20px;
+}
+
+.check i{
+  font-size: 22px;
+}
+
+.section2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  width:98%;
+  height: 13%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .5% 2%;
+  gap: 5%;
+
+}
+
+.title input{
+  width: 100%;
+  height: 80%;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.title input::placeholder{
+  color: white;
+  opacity: .6;
+}
+.title p{
+  display: flex;
+  gap: 1%;
+}
+
+.title span{
+  font-size: 12px;
+  opacity: .8;
+}
+
+.note{
+  width:98%;
+  height: 80%;
+  background-color: black;
+}
+
+.note textarea{
+  color: rgb(212, 212, 212);
+  padding: 1%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border: none;
+  text-align:justify;
+  font-size:17px;
+  overflow-y: scroll;
+}
+
+.note textarea:focus{
+  outline:1px solid #FFD700 ;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000006b;
+}
+
+.modal{
+  width: 19%;
+  background-color:#d5b500 ;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: .1%;
+  gap: 10%;
+  min-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px black;
+}
+
+.modal h1{
+  font-size: 20px;
+  text-align: center;
+}
+
+.modal div button{
+  padding: 8px 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: limegreen;
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.modal div button:hover{
+  background-color: rgb(1, 127, 1);
+}
+
+.modal div button:nth-child(2){
+  background-color: red
+;}
+
+.modal div button:nth-child(2):hover{
+  background-color: rgb(119, 5, 5);
+}

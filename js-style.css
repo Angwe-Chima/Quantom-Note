@@ -1,0 +1,11 @@
+.js-checked{
+  border: 1px solid black;
+  background-color: lime;
+  padding: 2px;
+}
+
+.js-not-checked{
+  border: 1px solid black;
+  background-color: red;
+  padding: 2px;
+}
