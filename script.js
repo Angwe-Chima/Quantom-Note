@@ -101,6 +101,7 @@ function displayCards() {
     `;
 
     allCards.appendChild(newCard);
+    
   });
 }
 
@@ -201,6 +202,8 @@ const checkNote = ()=>{
       viewCard();
       // 4 make the card deletable
       deletCard();
+
+      
   
       count++;
     }
