@@ -33,9 +33,9 @@ i:hover{
 
 body{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: wheat;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,23 +44,24 @@ body{
 
 .allOf1{
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items:center;
   background: #000;
+  padding: 10px;
 }
 
 main{
   background-color: #373737;
-  width: 85%;
-  height: 95%;
+  width: 100%;
+  max-width: 1200px;
+  height: 95vh;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center ;
   flex-direction: column;
-
 }
 
 nav{
@@ -71,6 +72,9 @@ nav{
   background-color: #FFD700;
   padding: 0% .2%;
   height: 10%;
+  min-height: 60px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 nav a{
@@ -80,22 +84,24 @@ nav a{
 nav a h1{
   color: black;
   text-shadow: 0px 0px 2px ;
+  font-size: clamp(1.2rem, 5vw, 2rem);
 }
 
 .back{
   width: 30%;
   display: flex;
   justify-content: start;
+  min-width: 50px;
 }
 
 .back i{
   color:black;
   text-align: center;
-  font-size: 30px;
+  font-size: clamp(20px, 5vw, 30px);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .back i:hover{
@@ -103,11 +109,12 @@ nav a h1{
  border-radius: 5px;
 }
 
-
 .QN1{
   width: 55%;
   display: flex;
   justify-content: end;
+  flex: 1;
+  min-width: 150px;
 }
 
 .menu{
@@ -115,10 +122,12 @@ nav a h1{
   display: flex;
   justify-content: end;
   padding-right:20px;
+  flex: 1;
+  min-width: 50px;
 }
 
 .menu i{
-  font-size: 22px;
+  font-size: clamp(18px, 5vw, 22px);
   background-color: white;
   padding: 1%;
   border-radius: 2px;
@@ -133,14 +142,16 @@ nav a h1{
   align-items: center;
   gap: 1%;
   padding: 1%;
+  overflow: hidden;
 }
 
 .add-btn-div{
   width: 100%;
-  height: 10%;
+  height: 12%;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 80px;
 }
 
 .plus-div{
@@ -148,13 +159,14 @@ nav a h1{
   height: 100%;
   border-radius: 10px;
   background-color: black;
-  font-size: 60px;
+  font-size: clamp(40px, 8vw, 60px);
   display: flex;
   padding: 2.5%;
   justify-content: center;
   align-items: center;
   transition: all .3s ease;
   cursor: pointer;
+  max-height: 100px;
 }
 
 .plus-div:hover{
@@ -168,7 +180,7 @@ nav a h1{
 
 .all-notes{
   width: 100%;
-  height: 80%;
+  height: 75%;
   border: 3px solid #ffd9004f;
   border-radius: 10px 0px 0px 10px;
   display: flex;
@@ -177,18 +189,19 @@ nav a h1{
   gap: 5%;
   overflow-y: scroll;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .card{
   width: 16%;
-  height: 150px;
+  min-width: 160px;
+  height: 140px;
   background-color: #000;
   border-radius: 10px;
   color: white;
   box-shadow: 0px 0px 8px black;
-  min-width: 180px;
-  min-height: 140px;
   cursor: pointer;
+  flex: 0 1 calc(16.666% - 15px);
 }
 
 .card-sec1{
@@ -202,6 +215,7 @@ nav a h1{
  align-items: center;
  color: black;
  font-weight: 600;
+ font-size: clamp(11px, 2vw, 14px);
 }
 
 .card-sec2{
@@ -214,6 +228,7 @@ nav a h1{
   padding: 2%;
   gap: 5%;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .card-sec2 p, .card-sec2 h1{
@@ -222,10 +237,11 @@ nav a h1{
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
+  font-size: clamp(10px, 2vw, 16px);
 }
 
 .card-sec2 p{
-  font-size: 12px;
+  font-size: clamp(9px, 1.5vw, 12px);
 }
 
 footer{
@@ -236,32 +252,34 @@ footer{
   align-items:center;
   background-color: #FFD700;
   padding: 0% .2%;
+  min-height: 60px;
 }
 
 footer i{
-  font-size: 30px;
+  font-size: clamp(22px, 5vw, 30px);
   cursor: pointer;
 }
 
-
 /*/////////////////////////////////////////*/
 /*/////////////////////////////////////////*/
 /*/////////////////////////////////////////*/
-
 
 .allOf2{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items:center;
   background: #000;
+  padding: 10px;
 }
 
 .QN2{
   width: 30%;
   display: flex;
   justify-content: center;
+  flex: 1;
+  min-width: 150px;
 }
 
 .check{
@@ -269,10 +287,12 @@ footer i{
   display: flex;
   justify-content: end;
   padding-right:20px;
+  flex: 1;
+  min-width: 50px;
 }
 
 .check i{
-  font-size: 22px;
+  font-size: clamp(18px, 5vw, 22px);
   cursor: pointer;
 }
 
@@ -283,11 +303,15 @@ footer i{
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
+  gap: 10px;
 }
 
 .title{
-  width:98%;
-  height: 13%;
+  width: 100%;
+  max-width: 98%;
+  height: auto;
+  min-height: 120px;
   background-color: black;
   color: white;
   display: flex;
@@ -295,16 +319,17 @@ footer i{
   justify-content: center;
   padding: .5% 2%;
   gap: 5%;
-
+  border-radius: 5px;
 }
 
 .title input{
   width: 100%;
-  height: 80%;
-  padding: 0;
+  height: auto;
+  min-height: 50px;
+  padding: 10px;
   background-color: black;
   color: white;
-  font-size: 30px;
+  font-size: clamp(18px, 5vw, 30px);
   border: none;
   outline: none;
   text-transform: capitalize;
@@ -314,20 +339,26 @@ footer i{
   color: white;
   opacity: .6;
 }
+
 .title p{
   display: flex;
+  flex-wrap: wrap;
   gap: 1%;
+  font-size: clamp(12px, 3vw, 14px);
 }
 
 .title span{
-  font-size: 12px;
+  font-size: clamp(10px, 2.5vw, 12px);
   opacity: .8;
 }
 
 .note{
-  width:98%;
-  height: 80%;
+  width: 100%;
+  max-width: 98%;
+  height: 60vh;
   background-color: black;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .note textarea{
@@ -338,7 +369,7 @@ footer i{
   background-color: black;
   border: none;
   text-align:justify;
-  font-size:17px;
+  font-size: clamp(14px, 3vw, 17px);
   overflow-y: scroll;
   resize: none;
 }
@@ -356,38 +387,42 @@ footer i{
   align-items: center;
   background-color: #0000006b;
   z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 .modal{
-  width: 19%;
+  width: 90%;
+  max-width: 400px;
   background-color:#d5b500 ;
-  height: 200px;
+  height: auto;
+  min-height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: .1%;
-  gap: 10%;
-  min-width: 200px;
+  padding: 20px;
+  gap: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 15px black;
 }
 
 .modal h1{
-  font-size: 20px;
+  font-size: clamp(16px, 4vw, 20px);
   text-align: center;
 }
 
 .modal div button{
-  padding: 8px 20px;
+  padding: clamp(6px, 2vw, 8px) clamp(15px, 4vw, 20px);
   border-radius: 15px;
   border: none;
   background-color: limegreen;
   color: white;
-  margin: 10px;
+  margin: 5px;
   font-weight: bold;
   transition: .3s;
   cursor: pointer;
+  font-size: clamp(14px, 3vw, 16px);
 }
 
 .modal div button:hover{
@@ -400,4 +435,262 @@ footer i{
 
 .modal div button:nth-child(2):hover{
   background-color: rgb(119, 5, 5);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .allOf1,
+  .allOf2 {
+    padding: 5px;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+
+  nav {
+    flex-direction: row;
+    min-height: 50px;
+    padding: 10px;
+  }
+
+  nav a h1 {
+    font-size: 1.2rem;
+  }
+
+  .QN1 {
+    width: 100%;
+    justify-content: center;
+    order: 3;
+    flex: none;
+  }
+
+  .back,
+  .menu,
+  .check {
+    flex: 1;
+  }
+
+  .card {
+    width: calc(50% - 10px);
+    min-width: unset;
+    height: 120px;
+    flex: 0 1 calc(50% - 10px);
+  }
+
+  .section1 {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .add-btn-div {
+    min-height: 60px;
+  }
+
+  .plus-div {
+    font-size: 40px;
+    min-height: 60px;
+  }
+
+  .all-notes {
+    gap: 10px;
+    border-radius: 5px;
+  }
+
+  .section2 {
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .title {
+    min-height: 100px;
+    padding: 10px;
+  }
+
+  .title input {
+    min-height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .note {
+    height: 50vh;
+  }
+
+  .modal {
+    width: 85%;
+    min-height: 160px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: #000;
+  }
+
+  .allOf1,
+  .allOf2 {
+    padding: 0;
+  }
+
+  main {
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  nav {
+    height: auto;
+    min-height: 50px;
+    padding: 8px;
+    gap: 5px;
+  }
+
+  nav a h1 {
+    font-size: 1rem;
+  }
+
+  .QN1 {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .back,
+  .menu,
+  .check {
+    min-width: 40px;
+    flex: 0;
+  }
+
+  .back i,
+  .menu i,
+  .check i {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .section1 {
+    height: 85%;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .add-btn-div {
+    height: 15%;
+    min-height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .plus-div {
+    font-size: 30px;
+    min-height: 50px;
+  }
+
+  .all-notes {
+    height: 75%;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 0;
+  }
+
+  .card {
+    width: calc(100% - 8px);
+    height: 100px;
+    min-width: unset;
+    flex: 0 1 calc(100% - 8px);
+  }
+
+  .card-sec1 {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  .card-sec2 {
+    padding: 8px;
+    gap: 3px;
+  }
+
+  .card-sec2 h1 {
+    font-size: 12px;
+  }
+
+  .card-sec2 p {
+    font-size: 10px;
+  }
+
+  footer {
+    min-height: 50px;
+  }
+
+  footer i {
+    font-size: 18px;
+  }
+
+  .section2 {
+    padding: 0;
+    gap: 0;
+    height: 100%;
+  }
+
+  .title {
+    width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 0;
+    gap: 3px;
+  }
+
+  .title input {
+    font-size: 1.2rem;
+    min-height: 40px;
+    padding: 8px;
+  }
+
+  .title p {
+    gap: 5px;
+    font-size: 11px;
+  }
+
+  .note {
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 180px);
+    min-height: 300px;
+    border-radius: 0;
+  }
+
+  .note textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 90vw;
+    min-height: 150px;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .modal h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .modal div button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 5px;
+  }
 }
